@@ -105,7 +105,7 @@ if all_semesters_data:
     c2.metric("Total Semesters", len(semesters))
     c3.metric("🏆 FINAL CGPA", cgpa)
 
-    # --- SECTION D: VISUALIZATION (THE NEW PART) ---
+    # --- SECTION D: VISUALIZATION ( SGPA trend visualization) ---
     st.divider()
     st.subheader("📈 Performance Trend")
 
