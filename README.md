@@ -1,1 +1,0 @@
-# jntuk--result-analyzer
