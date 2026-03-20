@@ -38,7 +38,7 @@ def parse_pdf(file_obj):
             for line in lines:
                 clean_line = line.replace('"', '').replace(',', '').strip()
                 
-                # --- HUNT FOR ROLL NUMBER ---
+               # Extract roll number using regex pattern
                 # Pattern: 2 digits, 2 letters, 1 alphanumeric, 4 digits (e.g., 22HJ1A4311)
                 # We assume the roll number is essentially the only 10-char string with this pattern
                 if roll_no == "Unknown":
