@@ -46,7 +46,7 @@ elif uploaded_files:
 if all_semesters_data:
     full_history = pd.concat(all_semesters_data, ignore_index=True)
     
-    # CLEANUP
+    # Remove duplicate subjects, keep highest grade
     if 'Points' in full_history.columns:
         full_history.sort_values(by='Points', ascending=False, inplace=True)
     full_history.drop_duplicates(subset=['Subject'], keep='first', inplace=True)
